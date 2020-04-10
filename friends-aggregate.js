@@ -8,7 +8,7 @@ db.friends.aggregate([
         age: "$age",
       },
       allHobbies: {
-        $push: "$hobbies",
+        $addToSet: "$hobbies",
       },
     },
   },
